@@ -1,0 +1,34 @@
+on:
+  workflow_dispatch:
+    branches: [main]
+    inputs:
+      pack_version:
+        description: 'Resource pack version to publish'
+        required: true
+      minecraft_version:
+        description: 'Minimal supported Minecraft version'
+        required: true
+jobs:
+  setup-build-publish:
+    runs-on: 'ubuntu-latest'
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+      - uses: ComunidadAylas/PackSquash-action@v4
+        with:
+          packsquash_version: latest
+          options: |
+            pack_directory = 'pack'
+            output_file_path = 'SmoothTerrainLoading.zip'
+      - uses: Kir-Antipov/mc-publish@v3.3
+        with:
+          name: SmoothTerrainLoading for Minecraft ${{inputs.minecraft_version}}+
+          version: ${{inputs.pack_version}}
+          files: 'SmoothTerrainLoading.zip'
+          loaders: minecraft
+          game-versions: ">=${{inputs.minecraft_version}}"
+          modrinth-id: xERJHoyX
+          modrinth-token: ${{secrets.MODRINTH_TOKEN}}
+          modrinth-featured: true
+          github-token: ${{secrets.GITHUB_TOKEN}}
