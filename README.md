@@ -20,4 +20,4 @@ This resource pack is **incompatible** with Sodium and may be incompatible with 
 
 ## License
 
-Smooth Terrain Loading is licensed under the [MIT License](LICENSE). Feel free to use and modify it as you see fit!
+Smooth Terrain Loading is licensed under the [MIT License](LICENSE.txt). Feel free to use and modify it as you see fit!
