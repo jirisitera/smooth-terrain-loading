@@ -2,7 +2,7 @@
 
 [![modrinth](https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy/available/modrinth_vector.svg)](https://modrinth.com/resourcepack/smooth_terrain_loading)
 
-[![.github/workflows/pack.yml](https://github.com/jirisitera/smooth_terrain_loading/actions/workflows/pack.yml/badge.svg)](https://github.com/jirisitera/smooth_terrain_loading/actions/workflows/pack.yml)
+[![.github/workflows/pack.yml](https://github.com/jirisitera/smooth-terrain-loading/actions/workflows/pack.yml/badge.svg)](https://github.com/jirisitera/smooth-terrain-loading/actions/workflows/pack.yml)
 ![Modrinth Downloads](https://img.shields.io/modrinth/dt/xERJHoyX)
 ![Modrinth Game Versions](https://img.shields.io/modrinth/game-versions/xERJHoyX)
 
